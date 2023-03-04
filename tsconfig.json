@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+    "outDir": "dist",
+		"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"preserveValueImports": true,
+		"lib": [
+			"esnext",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"moduleResolution": "node",
+		"module": "esnext",
+		"target": "esnext"
+	},
+	"include": [
+		"./types/**/$types.d.ts",
+		"./src/**/*.js",
+		"./src/**/*.ts",
+		"./tests/**/*.js",
+		"./tests/**/*.ts"
+	],
+	"exclude": [
+		"../node_modules/**",
+		"./[!ambient.d.ts]**",
+		"../src/service-worker.js",
+		"../src/service-worker.ts",
+		"../src/service-worker.d.ts"
+	]
+}
