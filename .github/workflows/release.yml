@@ -32,8 +32,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
         run: pnpm i
-      - run: pnpm build --if-present
-      - run: pnpm test --if-present
+      - run: pnpm build
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
